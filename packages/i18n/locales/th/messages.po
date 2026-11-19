@@ -156,6 +156,16 @@ msgstr "{0} หยุดชั่วคราวจนกว่าจะเป�
 msgid "{0}% used"
 msgstr "ใช้แล้ว {0}%"
 
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "{agent} was invited to {group}"
+msgstr ""
+
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "{agent} was invited to a group"
+msgstr ""
+
 #: apps/web/src/lib/billing/billing.ts
 msgid "{amount} / {period}"
 msgstr "{amount} / {period}"
@@ -195,6 +205,11 @@ msgstr "สัปดาห์นี้ใช้ไป {amount}"
 #: apps/mobile/lib/account/spending-limit.ts
 msgid "{amount} spent today"
 msgstr "วันนี้ใช้ไป {amount}"
+
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "{app} group"
+msgstr ""
 
 #: apps/mobile/lib/thread/thread-voice.ts
 msgid "{bot} here."
@@ -502,6 +517,19 @@ msgstr "{names} ใช้โมเดลของตัวเองต่อไ�
 #: apps/web/src/pages/model-settings/space-bots-model.tsx
 msgid "{names} keeps its own model"
 msgstr "{names} ใช้โมเดลของตัวเองต่อไป"
+
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "{owner}'s {peer} wants to connect to {agent}"
+msgstr ""
+
+#: apps/mobile/app/(settings)/messaging.tsx
+msgid "{owner}'s {peer} wants to connect to {named}"
+msgstr ""
+
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "{owner}'s {peer} wants to connect to your bot"
+msgstr ""
 
 #: apps/web/src/pages/shell/bots/agent-import-plan.tsx
 msgid "{picked} of {total}"
@@ -964,6 +992,7 @@ msgstr "Access token (ไม่บังคับ)"
 
 #: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/paywall.tsx
+#: apps/mobile/components/inbox/inbox-footer.tsx
 #: apps/mobile/components/inbox/inbox-header.tsx
 #: apps/mobile/lib/inbox/use-inbox-header.ts
 #: apps/web/src/components/account/AccountMenu.tsx
@@ -1371,9 +1400,11 @@ msgstr "ทุกช่วงเวลา"
 msgid "Allow"
 msgstr "อนุญาต"
 
+#: apps/mobile/app/(settings)/messaging.tsx
 #: apps/mobile/lib/settings/ai-consent.ts
 #: apps/web/src/components/call/VoiceConsentDialog.tsx
 #: apps/web/src/components/settings/ApprovalRulesSettings.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
 msgid "Allow"
 msgstr "อนุญาต"
 
@@ -1652,10 +1683,8 @@ msgstr "รูปแบบการอนุมัติ"
 msgid "Approvals"
 msgstr "การอนุมัติ"
 
-#: apps/mobile/app/(settings)/messaging.tsx
 #: apps/mobile/components/cards/McpApprovalCard.tsx
 #: apps/web/src/pages/plugins/PluginSubmissionsPanel.tsx
-#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
 #: apps/web/src/pages/shell/chat/message-cards.tsx
 msgid "Approve"
 msgstr "อนุมัติ"
@@ -2356,6 +2385,11 @@ msgstr "เปลี่ยน {name}"
 msgid "Change {title}"
 msgstr "เปลี่ยน {title}"
 
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "Change bot"
+msgstr ""
+
 #: apps/mobile/lib/cards/run-error-presentation.ts
 #: apps/web/src/pages/shell/composer/composer-error.tsx
 msgid "Change model"
@@ -2412,11 +2446,6 @@ msgstr "การตั้งค่าแชท"
 #: apps/web/src/pages/shell/composer/composer-mentions.tsx
 msgid "Chat Settings"
 msgstr "การตั้งค่าแชท"
-
-#: apps/mobile/app/(settings)/messaging.tsx
-#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
-msgid "Chat with your bot from Slack."
-msgstr "แชทกับบอทจาก Slack ได้"
 
 #: apps/web/src/pages/settings/settings-nav.ts
 msgid "Chat with your bots from other apps."
@@ -2927,6 +2956,11 @@ msgstr "เชื่อมต่อ"
 msgid "Connect {0}"
 msgstr "เชื่อมต่อ {0}"
 
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "Connect {app}"
+msgstr ""
+
 #: apps/mobile/app/(settings)/wallet.tsx
 #: apps/mobile/components/cards/AppConnectCard.tsx
 #: apps/mobile/components/integrations/add-custom-integration.tsx
@@ -2937,11 +2971,6 @@ msgstr "เชื่อมต่อ {name}"
 #: apps/web/src/pages/model-settings/ModelSettingsOverlay.tsx
 msgid "Connect {selectedProviderName}"
 msgstr "เชื่อมต่อ {selectedProviderName}"
-
-#: apps/mobile/app/(settings)/messaging.tsx
-#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
-msgid "Connect a chat app"
-msgstr "เชื่อมต่อแอปแชท"
 
 #: apps/mobile/app/(settings)/models.tsx
 #: apps/mobile/app/chat-model.tsx
@@ -2966,6 +2995,7 @@ msgstr "เชื่อมต่อผู้ให้บริการเสี
 msgid "Connect API key"
 msgstr "เชื่อมต่อ API key"
 
+#: apps/mobile/components/inbox/inbox-footer.tsx
 #: apps/web/src/pages/shell/keyboard-shortcuts-dialog.tsx
 #: apps/web/src/pages/shell/sidebar/sidebar-footer.tsx
 #: apps/web/src/pages/shell/use-palette-actions.ts
@@ -3166,6 +3196,10 @@ msgstr "Control"
 #: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
 msgid "Conversations"
 msgstr "การสนทนา"
+
+#: apps/mobile/lib/settings/ai-consent.ts
+msgid "Conversations, names and searches are sent to store and recall context."
+msgstr ""
 
 #: apps/mobile/lib/settings/ai-consent.ts
 msgid "Conversations, names, memories, searches and bot and Space IDs are sent to store and recall context."
@@ -4577,6 +4611,10 @@ msgstr "นิพจน์ Cron"
 msgid "Currency"
 msgstr "สกุลเงิน"
 
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "Current"
+msgstr ""
+
 #: apps/mobile/app/(settings)/change-password.tsx
 #: apps/mobile/components/settings/account-deletion.tsx
 #: apps/web/src/components/account/AccountAccess.tsx
@@ -4688,12 +4726,14 @@ msgstr "ปฏิเสธ"
 msgid "Declined"
 msgstr "ปฏิเสธแล้ว"
 
+#: apps/mobile/app/(settings)/voice.tsx
 #: apps/mobile/app/bot-settings.tsx
 #: apps/mobile/components/bots/bot-look-picker.tsx
 #: apps/mobile/components/models/model-role-settings.tsx
 #: apps/web/src/components/computers/ComputerProviderSettings.tsx
 #: apps/web/src/pages/model-settings/ModelRoleSettings.tsx
 #: apps/web/src/pages/model-settings/role-model-picker.tsx
+#: apps/web/src/pages/settings/VoiceSettingsOverlay.tsx
 #: apps/web/src/pages/shell/bots/avatar-studio-popover.tsx
 msgid "Default"
 msgstr "ค่าเริ่มต้น"
@@ -5477,12 +5517,9 @@ msgid "Everyone here sees its chats, bots and memory"
 msgstr "ทุกคนที่นี่เห็นแชท บอท และความจำได้"
 
 #: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
 msgid "Everyone in this bot's space can read the chats it gets from {app}."
 msgstr "ทุกคนในสเปซของบอทนี้อ่านแชทที่ได้รับจาก {app} ได้"
-
-#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
-msgid "Everyone in this bot's space can read the chats it gets from {linkApp}."
-msgstr "ทุกคนในสเปซของบอทนี้อ่านแชทที่ได้รับจาก {linkApp} ได้"
 
 #. placeholder {0}: first.name
 #: apps/web/src/components/billing/ModelCredits.tsx
@@ -6018,7 +6055,7 @@ msgstr "ซ่อน"
 msgid "Hide {label}"
 msgstr "ซ่อน {label}"
 
-#: apps/mobile/components/thread/header/chat-route-header.tsx
+#: apps/mobile/components/inbox/inbox-header.tsx
 msgid "Hide chats"
 msgstr "ซ่อนแชท"
 
@@ -7090,6 +7127,10 @@ msgstr "ส่งข้อความถึง {peer} แล้ว"
 msgid "Messages, chat history, bot instructions, memories, attachments, screenshots and connected-app content are sent to run your bots, including routines."
 msgstr "ข้อความ, ประวัติแชท, คำสั่งของบอท, ความจำ, ไฟล์แนบ, สกรีนช็อต และเนื้อหาจากแอปที่เชื่อมต่อ จะถูกส่งเพื่อรันบอท รวมถึงรูทีนด้วย"
 
+#: apps/mobile/lib/settings/ai-consent.ts
+msgid "Messages, files, bot instructions, memories and connected-app content are sent to run your bots."
+msgstr ""
+
 #: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/(settings)/account.tsx
 #: apps/web/src/pages/settings/settings-nav.ts
@@ -8160,6 +8201,11 @@ msgstr "ไม่บังคับ"
 msgid "Optional header value"
 msgstr "ค่า Header (ไม่บังคับ)"
 
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "Options for {app}"
+msgstr ""
+
 #: apps/mobile/app/(settings)/model-connection.tsx
 msgid "Or connect an API key"
 msgstr "หรือเชื่อมต่อ API key"
@@ -8608,7 +8654,6 @@ msgstr "ความเป็นส่วนตัว"
 msgid "Privacy policies"
 msgstr "นโยบายความเป็นส่วนตัว"
 
-#: apps/mobile/lib/settings/ai-consent.ts
 #: apps/web/src/components/call/VoiceConsentDialog.tsx
 msgid "Privacy policy"
 msgstr "นโยบายความเป็นส่วนตัว"
@@ -9870,12 +9915,12 @@ msgid "Send {code} to {address} from {app} within 10 minutes."
 msgstr "ส่ง {code} จาก {app} ไปยัง {address} ภายใน 10 นาที"
 
 #: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
-msgid "Send <0>{linkCode}</0> from {linkApp} within 10 minutes."
-msgstr "ส่ง <0>{linkCode}</0> จาก {linkApp} ภายใน 10 นาที"
+msgid "Send <0>{code}</0> from {app} within 10 minutes."
+msgstr ""
 
 #: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
-msgid "Send <0>{linkCode}</0> to <1>{linkAddress}</1> from {linkApp} within 10 minutes."
-msgstr "ส่ง <0>{linkCode}</0> จาก {linkApp} ไปยัง <1>{linkAddress}</1> ภายใน 10 นาที"
+msgid "Send <0>{code}</0> to <1>{address}</1> from {app} within 10 minutes."
+msgstr ""
 
 #: apps/mobile/components/thread/ask-block.tsx
 msgid "Send answer"
@@ -9885,6 +9930,10 @@ msgstr "ส่งคำตอบ"
 #: apps/web/src/pages/shell/composer/composer-error.tsx
 msgid "Send as file"
 msgstr "ส่งเป็นไฟล์"
+
+#: apps/mobile/lib/settings/ai-consent.ts
+msgid "Send data to {name}?"
+msgstr ""
 
 #: apps/mobile/components/settings/account-deletion.tsx
 #: apps/web/src/components/account/AccountAccess.tsx
@@ -10039,10 +10088,6 @@ msgstr "แชร์ “{title}”"
 #: apps/mobile/components/media/image-artifact-viewer.tsx
 msgid "Share {name}"
 msgstr "แชร์ {name}"
-
-#: apps/mobile/lib/settings/ai-consent.ts
-msgid "Share data with {name}?"
-msgstr "แชร์ข้อมูลกับ {name} ไหม?"
 
 #: apps/mobile/app/(settings)/organization-members.tsx
 #: apps/mobile/app/space-members.tsx
@@ -10804,11 +10849,6 @@ msgstr "ตาราง"
 #: apps/web/src/pages/shell/computers/computer-overlay.tsx
 msgid "Take control"
 msgstr "เข้าควบคุม"
-
-#: apps/mobile/app/index.tsx
-#: apps/mobile/components/inbox/inbox-render-item.tsx
-msgid "Tap + to create a bot"
-msgstr "แตะ + เพื่อสร้างบอท"
 
 #: apps/mobile/components/media/inline-image-attachment.tsx
 msgid "Tap to open"
@@ -12439,10 +12479,6 @@ msgstr "หากไม่เปลี่ยนเส้นทางอัตโ
 msgid "You can close this window."
 msgstr "ปิดหน้าต่างนี้ได้"
 
-#: apps/mobile/lib/settings/ai-consent.ts
-msgid "You can turn this off in Account → AI data sharing."
-msgstr "ปิดได้ที่ บัญชี → การแชร์ข้อมูลกับ AI"
-
 #: apps/web/src/components/call/VoiceChatCard.tsx
 msgid "You declined"
 msgstr "คุณปฏิเสธ"
@@ -12469,6 +12505,11 @@ msgstr "Anthropic ของคุณ"
 #: apps/web/src/pages/plugins/manage-view.tsx
 msgid "Your apps"
 msgstr "แอปของคุณ"
+
+#: apps/mobile/app/(settings)/messaging.tsx
+#: apps/web/src/pages/settings/MessagingSettingsPanel.tsx
+msgid "Your bot"
+msgstr ""
 
 #: apps/mobile/app/meeting-calendar.tsx
 #: apps/web/src/pages/shell/meetings/meeting-calendar.tsx
@@ -12557,6 +12598,10 @@ msgstr "เมื่อช่วงทดลองใช้สิ้นสุด
 #: apps/web/src/components/billing/ModelCredits.tsx
 msgid "Your plan becomes {tierTargetLabel} when your trial ends."
 msgstr "เมื่อช่วงทดลองใช้สิ้นสุด แพ็กเกจจะเป็น {tierTargetLabel}"
+
+#: apps/mobile/lib/settings/ai-consent.ts
+msgid "Your recordings and the text you play are sent for transcription and speech."
+msgstr ""
 
 #: apps/mobile/lib/settings/ai-consent.ts
 #: apps/web/src/components/call/VoiceConsentDialog.tsx
